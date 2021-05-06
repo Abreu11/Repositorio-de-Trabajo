@@ -5,8 +5,13 @@ Cada carpeta se registrará en una carpeta organizada en semanas y días.
 
 Tecnologías que usaremos.
 
-- html
+- Html
 - CCS
     - Sass
 - JavaScript
     - Librerias
+    - ChartJs
+    - Leaftlet
+    - DataTables
+- Frameworks
+    - ReactJS
