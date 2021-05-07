@@ -25,6 +25,7 @@
         <!-- Los enlaces van en la Barra de navegación -->
         <!-- los href viene siendo una propiedad que indica la página a la cual nos enlazamos mediante el link -->
         <!-- Para crear cada ruta de cada link hay que crear archivos hermanos dentro de la misma carpeta en la que estamos trabajando -->
+        <!-- las listas pueden ser representadas por dos tipos de etiquetas que sirven para enumerar, listas ordenas y listas desordenadas. -->
         <a href="Mi perfil.html">Mi Perfil</a>
         <!-- Creamos otro file con el nombre del Perfir colocamos ! y el auto comleta y copiamos todo lo que es el nav y lo pegamos en el file mi perfil -->
         <a href="https://www.google.com.pe" target="_blank">Buscador</a>
@@ -37,17 +38,57 @@
             <h2>Curso Disponibles</h2>
             <article>
                 <h3>Cuso HTML</h3>
+                <img src="https://via.placeholder.com/150">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus tempora ea magni eveniet
                     quibusdam, iste molestias quaerat amet, facere saepe soluta quisquam aperiam nemo? Aperiam nemo
                     natus consectetur qui?
                     Iste consequuntur hic doloremque? Aspernatur cupiditate animi incidunt ipsam unde cumque impedit
                     ullam fugit blanditiis quis consequuntur eius dolores omnis quae alias ex deleniti sit, quod
-                    reprehenderit quia at exercitationem.
+                    reprehenderit quia at exercitationem.                                     
                 </p>
+                <h4>Temas a tocar</h4>  
+                 <!-- ul listas desornadas ol listas ordenadas li es un elemento -->
+                 <ul>
+                    <li>Introducción a HTML</li>
+                    <li>Tablas</li>
+                    <li>Formularios</li>                        
+                </ul>
             </article>
             <article>
                 <h3>Curso JavaScript</h3>
+                <img src="./imagenes/edificio.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae asperiores,
+                    pariatur labore, placeat cum sit distinctio totam doloremque ex reiciendis debitis! Quasi commodi
+                    quia dolore doloremque dolorem libero nesciunt. Aprenderemos las funciones de flecha! :
+                <pre>
+                        <code>
+                        const sumar = a (a,b) =>{
+                            return a+b;
+                        }
+                        </code>
+                        <!-- code sirve para denotar pedacitos de codigo de algún lenguaje de programación -->
+                    </pre>
+                </p>
+                <h4>Módulos</h4>
+                <ol type="A">
+                    <li>Módulo Básico</li>
+                    <li>Módulo Intermedio</li>
+                    <li>Módulo Avanzado</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Curso JavaScript</h3>
+                <!-- ./ para salir de una carpeta, si se quiere salir a otra carpeta es ./../ y si se quiere salir a otra mas ./../../ -->
+                <!-- alt sirve para indicar una breve descripción de la imagen -->
+                <!-- la etiqueta para envolver una imagen es figure -->
+                <figure>
+                    <img src="./../Imagenes Globales/edificio.png" width="80" alt="Edificio">
+                </figure>
+                <figure>
+                    <img src="./../Imagenes Globales/edificio.png" alt="Edificio">
+                </figure>
+                <!-- propiedades de las imágenes widh (ancho) -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae asperiores,
                     pariatur labore, placeat cum sit distinctio totam doloremque ex reiciendis debitis! Quasi commodi
                     quia dolore doloremque dolorem libero nesciunt. Aprenderemos las funciones de flecha! :
@@ -65,22 +106,8 @@
                 <h3>Curso JavaScript</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae asperiores,
                     pariatur labore, placeat cum sit distinctio totam doloremque ex reiciendis debitis! Quasi commodi
-                    quia dolore doloremque dolorem libero nesciunt. Aprenderemos las funciones de flecha! :
-                <pre>
-                        <code>
-                        const sumar = a (a,b) =>{
-                            return a+b;
-                        }
-                        </code>
-                        <!-- code sirve para denotar pedacitos de codigo de algún lenguaje de programación -->
-                    </pre>
-                </p>
-            </article>
-            <article>
-                <h3>Curso JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repudiandae asperiores,
-                    pariatur labore, placeat cum sit distinctio totam doloremque ex reiciendis debitis! Quasi commodi
-                    quia dolore doloremque dolorem libero nesciunt. Aprenderemos las funciones de flecha! :
+                    quia dolore doloremque dolorem libero nesciunt. <strong>Aprenderemos</strong> <span>funciones de
+                        flechas</span>
                 <pre>
                         <code>
                         const sumar = a (a,b) =>{

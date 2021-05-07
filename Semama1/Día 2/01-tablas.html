@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #eee;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas en HTML</h1>
+    </header>
+    <main>
+
+        <table border="2">
+            <!-- En las cabeceras solo van los tr y los th no existen los td -->
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estefany</td>
+                    <td>Abreu</td>
+                </tr>
+                <tr>
+                    <td>Vistoria</td>
+                    <td>Palomares</td>
+                </tr>
+                <tr>
+                    <td>Ricard</td>
+                    <td>Palomares</td>
+                </tr>
+            </tbody>
+            <!-- tboby cuerp de la tabla y los tr son las filas de la tabla, lo td son las columnas -->
+        </table>
+        <!-- hr hace salto de linea -->
+        <hr />
+
+        <table border="2">
+            <thead>
+                <!-- colspan es el atributo que me indica cuantas columnas hay en esa fila -->
+                <th colspan="2">Notas</th>
+                <th>Promedio</th>
+            </thead>
+            <tbody>
+                <!-- tr*4>td*3 -->
+                <tr>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>16</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+        <table border="2">
+
+            <tbody>
+                <tr>
+                    <td colspan="2">A</td>
+                    <td colspan="2">B</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <hr />
+        <table border="2">
+            <tbody>
+                <!-- rowspan es cuantas filas hacia abajo y colspan es cuantas solumnas para la dercha -->
+                <tr>
+                    <td rowspan="2"></td>
+                    <td colspan="2">Average</td>
+                    <td rowspan="2">Red Eyes</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>weidht</td>
+                </tr>
+                <tr>
+                    <td>Caballeros</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>negros</td>
+                </tr>
+                <tr>
+                    <td>Damas</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>Verdes</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+        <hr />
+        <table border="2">
+            <tbody>
+                <!-- se coloca colspan y rowspan cuado de quiere combinar las filas y columnas al mismo tiempo -->
+                <tr>
+                    <td colspan="2" rowspan="2"> Row 1 rowspan="" colspam=""</td>
+                    <td colspan="3">Row2</td>
+                </tr>
+                <tr>
+                    <td>row 2</td>
+                    <td>row 2</td>
+                    <td>row 2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">row3</td>
+                    <td>row 2</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                    <td>row3</td>
+                </tr>
+                <tr>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                    <td>row4</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+
+</body>
+
+</html>
