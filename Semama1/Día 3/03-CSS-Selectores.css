@@ -1,0 +1,59 @@
+/* he selecciona a todos los h2 de la pagina*/
+
+h2 {
+    color :turquoise;
+}
+/*Se van a colorear los parrafos y la etiqueta h1*/
+p, h1 {
+color:darkred ;
+}
+
+/*los selectores con clase se representan con un . 
+y todos los elementos que lo contengan la clase sombra tendrán sombra*/
+
+.sombra{
+    box-shadow: 0px 2px 8px #888;
+}
+
+.text-danger{
+    color: firebrick;
+}
+
+.text-seuccess{
+    color: forestgreen;
+}
+
+/*afectar a los párrafos section p=> todos los parrafos que esten dentro o de bajo de ese seccion*/
+
+section p{
+font-size:smaller;
+}
+
+/*todas las etiquetas que tengan la clase badge-black que sean desedientes de un parrafo*/
+
+p .badge-black{
+    background-color: gainsboro;
+    color: rgb(52, 52, 59);
+}
+
+ul li{
+    font-style: italic;
+}
+/* todos los li que sean hijos en primir nivel de un ul igualmente van a herar 
+los style*/
+ul>li{
+    font-style: italic;
+}
+/*Acá si cambia por el nivel de especifidad que tiene*/
+ol>li{
+    font-style: normal;
+}
+
+/*pseudo-clases*/
+
+/*elemento hover => estilos que se aplicarán en un elemento 
+cuando el mouse esté encima del mismo*/
+
+ul > li:hover {
+background-color: #eee;
+}

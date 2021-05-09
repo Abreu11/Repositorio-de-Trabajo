@@ -99,8 +99,10 @@
                 <input type="radio" id="Depósito" name="pago">
             </div>
             <!-- el checkbox es para seleccionar varios -->
-            <div>
-                <label for="">Seleciones equipos a utilizar</label>
+            <!-- con fieldset lo que hace es enmarcar cierto grupo donde se Aplica.
+            legend lo que hace es muñequiar el cuadro -->
+            <fieldset>
+                <legend for="">Seleciones equipos a utilizar</legend>
                 <br />
                 <label for="auricular">Audífonos</label>
                 <input type="checkbox" id="auricular">
@@ -110,8 +112,22 @@
                 <br />
                 <label for="mouse">Mouse</label>
                 <input type="checkbox" id="mouse">
+            </fieldset>
+            <div>
+                <label for="color">Seleccione Color</label>
+                <input type="color" id="color">
+            </div>
+            <!-- carateristicas importates de los botones es el tipo
+            submit es la función que hace que se envía el formulario 
+        button es solo para controlar una acción
+    reset es para limpiar-->
+            <div>
+                <button type="submit">Guardar</button>
+                <button type="button">Consultar DNI</button>
+                <button type="reset">Limpiar Formularoio</button>
             </div>
         </form>
     </main>
 </body>
+
 </html>

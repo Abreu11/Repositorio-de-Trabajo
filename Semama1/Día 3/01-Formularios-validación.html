@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form>div {
+            margin-bottom: 8px;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #222;
+            color: #eee;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- colocar texto dentro de una estiqueta con header>h1{Texto que quiero que vaya dentro del h1} -->
+    <header>
+        <h1>Formularios Validació</h1>
+    </header>
+    <main>
+        <!-- la etiqueta form tiene una propieda en automatico llamado accion lo que action que nos indica a donde van los datos del formulalrio -->
+        <!-- la etiqueta label es la que acompña al farmulario         -->
+        <form>
+            <label for="">Nombre:</label>
+            <input type="text" />
+            <label for="">Nombre:</label>
+            <input type="text" />
+        </form>
+        <!-- cuado agregamos div hacemos la separacion entre uno y otro porque div es bloqueante -->
+        <hr />
+        <form>
+            <!-- por buenas practicas debemos vincular el for que es para quien es el label y eso se hace con id 
+            la acción requerido es la cndición que permite que el formulario no se guarde antes de completar la acción requerida-->
+            <div>
+                <label for="Nombre:">Nombre:</label>
+                <input type="text" id="Nombre:" placeholder="Ejem: Estefany" required />
+            </div>
+            <div>
+                <!-- placeholder es para dar como ayuda al usuario -->
+                <!-- en el inpud el type se va ir modifucando segun los que se vaya hacer tex email date(fecha) -->
+                <label for="Apellido:">Apellido:</label>
+                <input type="text" id="Apellido:" placeholder="Ejem: Abreu" required 
+                minlength="2"/>
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="Ejem: 18" min="17" max="50">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="anita@codigo.com">
+            </div>
+            <!-- ese min en la fecha preferiblemente hacerlo con librerias -->
+            <div>
+                <label for="contraseña">Password</label>
+                <input type="contraseña" id="contraseña"
+                pattern=""(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,} required
+                title="Ups!! minimo 8 caracteres, una mayuscula, una minuscula y un número">
+            </div>
+            <div>
+                <label for="fecha">Fecha de Matricula</label>
+                <input type="date" id="fecha" min="2014-12-31">
+            </div>
+            <!-- cada accion en el selec hay que hacer una etiqueta option -->
+            <div>
+                <label for="bootcamp">Selecciones Bootcamp</label>
+                <select id="bootcamp">
+                    <option value="web">Desarrolo Web Fullstack</option>
+                    <option value="mkt">Marketing Digital</option>
+                    <option value="aps">Desarrollo de Aplicaciones Móviles</option>
+                </select>
+            </div>
+            <div>
+                <!-- textarea es un espacio grande donde se pueden colocar textpo en filas y columnas pero se puede limitar la cantidad de carateres -->
+                <label for="mensaje">Mensaje al profesor</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <!-- Hay que hacer que se discriminen entre los dos y eso se hace con un name -->
+            <div>
+                <label for="">Escoja Turno:</label>
+                <br />
+                <label for="día">Día</label>
+                <input type="radio" id="día" name="turno">
+                <br />
+                <label for="noche">Noche</label>
+                <input type="radio" id="noche" name="turno">
+            </div>
+            <div>
+                <label for="">Tipo de Pago:</label>
+                <br />
+                <label for="tarjeta">Débito y/o Crédito</label>
+                <input type="radio" id="tarjeta" name="pago">
+                <br />
+                <label for="transfencia">Transfencia</label>
+                <input type="radio" id="transfencia" name="pago">
+                <br />
+                <label for="Depósito">Depósito</label>
+                <input type="radio" id="Depósito" name="pago">
+            </div>
+            <!-- el checkbox es para seleccionar varios -->
+            <!-- con fieldset lo que hace es enmarcar cierto grupo donde se Aplica.
+            legend lo que hace es muñequiar el cuadro -->
+            <fieldset>
+                <legend for="">Seleciones equipos a utilizar</legend>
+                <br />
+                <label for="auricular">Audífonos</label>
+                <input type="checkbox" id="auricular">
+                <br />
+                <label for="Laptop">Laptop</label>
+                <input type="checkbox" id="Laptop">
+                <br />
+                <label for="mouse">Mouse</label>
+                <input type="checkbox" id="mouse">
+            </fieldset>
+            <div>
+                <label for="color">Seleccione Color</label>
+                <input type="color" id="color">
+            </div>
+            <!-- carateristicas importates de los botones es el tipo
+            submit es la función que hace que se envía el formulario 
+        button es solo para controlar una acción
+    reset es para limpiar-->
+            <div>
+                <button type="submit">Guardar</button>
+                <button type="button">Consultar DNI</button>
+                <button type="reset">Limpiar Formularoio</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
