@@ -1,3 +1,15 @@
+/* el * significa que estoy seleccionando a todos los elementos de la estructura*/
+
+*{
+
+}
+
+
+
+
+
+
+
 /*
 
 Decada grupo de elementos, que ocupe la 
@@ -17,3 +29,93 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: rgb(247, 184, 184);
 }
+/*este es para pintar la 3ra columnas de las td y el th*/
+td:nth-child(3), th:nth-child(3){
+    background-color: rgb(227, 210, 250);
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+/*como quitar los espacios de las tablas*/
+table{
+    border-collapse: collapse;
+}
+
+thead tr:first-child{
+    background-color: rgb(252, 186, 88);
+}
+
+
+
+thead tr:first-child th:first-child{
+    border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child{
+   
+    border-top-right-radius: 10px;
+}
+
+nav li{
+    display: inline-block;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 10px;
+    color: rgb(81, 161, 27);
+}
+
+/*todos los elementos que tengan la clase nav-link pero además 
+tengan la clase active, pero esto va sin espacios todo va pegadito
+ahora si se le coloca espacio cambia la estructrura*/
+
+.nav-link.active {
+    font-style: oblique;
+}
+
+/* selecciona todos los elementos parrafo que sean hermano de un h2*/
+
+h2~p {
+    color:rgb(165, 122, 204)
+}
+
+/*el primer hermano parrafo de un h3*/
+
+h3+p {
+color:deeppink;
+}
+
+
+/* a todos los elemento articulos excepto los que 
+contengan agotado*/
+
+article:not(.agotado) {
+    width: 300px;
+    box-shadow: 0px 0px 8px #888;
+  }
+  
+  /*
+  Todos los hijos de "article" excepto los "h4"
+  */
+  
+  article :not(h4) {
+    font-style: italic;
+  }
+
+/*HAy que estar ojo con los especios porque al hacer el espacio solo
+toma en cuenta a los hijos desendites de un articulo
+*/
+/*Todos los hijos de article excepto los h4*/
+
+
+
+

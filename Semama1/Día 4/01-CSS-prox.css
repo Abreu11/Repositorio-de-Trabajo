@@ -1,0 +1,42 @@
+body{
+    background-color: #333;
+    color: #eee;
+}
+
+/*TIpo de letra
+el tamaño estandar es de 16px, 
+los px son unidades de medida fija
+em=el tamaño de una letra 16px, del padre directo del elemento como estandar,
+el papa del elemnto es el font-size
+rem= el tamaño de una letra en el elemto html (root)
+por lo general el tamño del proyecto es de 16px siempre y cuando no se hagan modificaciones 
+el font-weight es el grosor de la letra*/
+/*el tex align es como se alinea el texto*/
+/*el letter spacing es para ver cuantos espacios va entre letra y letra
+line-height es el espacio entre lineas del parrafo*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+letter-spacing: 16px;
+word-spacing: 20px;
+}
+
+.parrafo1{
+    text-align: center;
+    line-height: 25px;
+}
+
+.articulo1{
+    text-align: center;
+}
+
+.subrayado{
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
